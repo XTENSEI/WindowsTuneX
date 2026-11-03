@@ -24,7 +24,7 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Restore
-        run: dotnet restore RyTuneX.sln -p:Platform=${{ matrix.platform }}
+        run: dotnet restore Hyperion.sln -p:Platform=${{ matrix.platform }}
 
       - name: Create signing certificate
         shell: pwsh
@@ -45,7 +45,7 @@ jobs:
 
       - name: Build MSIX
         run: >
-          dotnet build RyTuneX.sln
+          dotnet build Hyperion.sln
           -c Release
           -p:Platform=${{ matrix.platform }}
           -p:GenerateAppxPackageOnBuild=true
@@ -58,7 +58,7 @@ jobs:
 
       - name: Build portable
         run: >
-          dotnet publish RyTuneX.csproj
+          dotnet publish Hyperion.csproj
           -c Release
           -r win-${{ matrix.platform }}
           -p:Platform=${{ matrix.platform }}

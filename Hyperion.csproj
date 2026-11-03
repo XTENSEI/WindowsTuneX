@@ -4,7 +4,8 @@
     <TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
     <LangVersion>preview</LangVersion>
-    <RootNamespace>RyTuneX</RootNamespace>
+    <RootNamespace>Hyperion</RootNamespace>
+    <AssemblyName>Hyperion</AssemblyName>
     <ApplicationIcon>Assets/WindowIcon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
 	<Platforms>x86;x64</Platforms>
@@ -25,8 +26,8 @@
     <SelfContained>true</SelfContained>
     <StartupObject>RyTuneX.Program</StartupObject>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-    <Version>1.8.0</Version>
-    <Authors>Rayen Ghanmi</Authors>
+    <Version>1.0.0</Version>
+    <Authors>Hyperion Optimizer Contributors</Authors>
     <GenerateTestArtifacts>False</GenerateTestArtifacts>
     <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
