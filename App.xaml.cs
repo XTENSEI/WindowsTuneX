@@ -352,7 +352,7 @@ public partial class App : Application
         services.AddSingleton<Microsoft.Extensions.Options.IOptions<LocalSettingsOptions>>(
             Microsoft.Extensions.Options.Options.Create(new LocalSettingsOptions
             {
-                ApplicationDataFolder = "RyTuneX/ApplicationData",
+                ApplicationDataFolder = "HyperionOptimizer/ApplicationData",
                 LocalSettingsFile = "LocalSettings.json"
             }));
 

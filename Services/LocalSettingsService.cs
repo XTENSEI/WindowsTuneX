@@ -10,7 +10,7 @@ namespace RyTuneX.Services;
 
 public class LocalSettingsService : ILocalSettingsService
 {
-    private const string _defaultApplicationDataFolder = "RyTuneX/ApplicationData";
+    private const string _defaultApplicationDataFolder = "HyperionOptimizer/ApplicationData";
     private const string _defaultLocalSettingsFile = "LocalSettings.json";
 
     private readonly IFileService _fileService;
