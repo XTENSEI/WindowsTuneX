@@ -220,14 +220,6 @@
                         </controls:SettingsCard.HeaderIcon>
                         <FontIcon Glyph="&#xE8A7;" FontSize="14"/>
                     </controls:SettingsCard>
-                    <controls:SettingsCard x:Uid="Settings_SupportDeveloper"
-                                   IsClickEnabled="True"
-                                   Click="SupportDeveloperCard_Click">
-                        <controls:SettingsCard.HeaderIcon>
-                            <FontIcon Glyph="&#xEB51;"/>
-                        </controls:SettingsCard.HeaderIcon>
-                        <FontIcon Glyph="&#xE8A7;" FontSize="14"/>
-                    </controls:SettingsCard>
                     <controls:SettingsCard x:Uid="SettingsPage_PrivacyTermsLink"
                                     IsClickEnabled="True"
                                     Click="PrivacyTermsCard_Click">

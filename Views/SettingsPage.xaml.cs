@@ -319,7 +319,7 @@ public sealed partial class SettingsPage : Page
         {
             Process.Start(new ProcessStartInfo
             {
-                FileName = "https://github.com/rayenghanmi/RyTuneX",
+                FileName = "https://github.com/XTENSEI/WindowsTuneX",
                 UseShellExecute = true
             });
         }
@@ -335,7 +335,7 @@ public sealed partial class SettingsPage : Page
         {
             Process.Start(new ProcessStartInfo
             {
-                FileName = "https://github.com/rayenghanmi/rytunex/issues/new",
+                FileName = "https://github.com/XTENSEI/WindowsTuneX/issues/new",
                 UseShellExecute = true
             });
         }
@@ -350,29 +350,13 @@ public sealed partial class SettingsPage : Page
         await ReviewPromptHelper.ShowReviewPopupAsync(XamlRoot, forceShow: true);
     }
 
-    private void SupportDeveloperCard_Click(object sender, RoutedEventArgs e)
-    {
-        try
-        {
-            Process.Start(new ProcessStartInfo
-            {
-                FileName = "https://buymeacoffee.com/rayen.ghanmi.22",
-                UseShellExecute = true
-            });
-        }
-        catch (Exception ex)
-        {
-            _ = LogHelper.LogError($"Failed to open support page: {ex.Message}");
-        }
-    }
-
     private void PrivacyTermsCard_Click(object sender, RoutedEventArgs e)
     {
         try
         {
             Process.Start(new ProcessStartInfo
             {
-                FileName = "https://github.com/rayenghanmi/RyTuneX/blob/main/LICENSE.md",
+                FileName = "https://github.com/XTENSEI/WindowsTuneX/blob/main/LICENSE.md",
                 UseShellExecute = true
             });
         }

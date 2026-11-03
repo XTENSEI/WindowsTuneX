@@ -95,12 +95,6 @@
                             <TextBlock x:Uid="HomePage_MoreInfoButton" Text="More Info"/>
                         </StackPanel>
                     </Button>
-                    <Button Style="{StaticResource DefaultButtonStyle}" Click="DiscordButton_Click">
-                        <StackPanel Orientation="Horizontal" Spacing="8" Padding="8,4">
-                            <BitmapIcon UriSource="ms-appx:///Assets/discord.png" Width="16" Foreground="{ThemeResource TextFillColorPrimary}"/>
-                            <TextBlock x:Uid="HomePage_DiscordButton" Text="Join Our Server"/>
-                        </StackPanel>
-                    </Button>
                 </StackPanel>
             </Grid>
 

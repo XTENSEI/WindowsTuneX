@@ -76,7 +76,7 @@ public static class ReviewPromptHelper
             {
                 try
                 {
-                    string storeUri = "ms-windows-store://review/?ProductId=9PDH8M7HF2SQ";
+                    string? storeUri = null;
                     if (RuntimeHelper.IsMSIX)
                     {
                         try
@@ -90,8 +90,11 @@ public static class ReviewPromptHelper
                         catch { }
                     }
 
-                    _ = LogHelper.Log($"[ReviewPromptHelper] Launching fallback Store URI: {storeUri}");
-                    await Windows.System.Launcher.LaunchUriAsync(new Uri(storeUri));
+                    if (storeUri is not null)
+                    {
+                        _ = LogHelper.Log($"[ReviewPromptHelper] Launching fallback Store URI: {storeUri}");
+                        await Windows.System.Launcher.LaunchUriAsync(new Uri(storeUri));
+                    }
                 }
                 catch (Exception ex)
                 {

@@ -1,5 +1,5 @@
-name: Bug Report
-description: Report a bug or issue in RyTuneX to help us improve the experience.
+﻿name: Bug Report
+description: Report a bug in Hyperion Optimizer, a fork of RyTuneX. Upstream issues belong at https://github.com/rayenghanmi/RyTuneX/issues.
 title: "[Bug] "
 labels: ["bug"]
 body:
@@ -7,13 +7,13 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report this bug!
-        RyTuneX applies system-level optimizations, so providing exact OS version and hardware details helps greatly.
+        Hyperion Optimizer applies system-level optimizations, so providing exact OS version and hardware details helps greatly.
   - type: checkboxes
     id: checklist
     attributes:
       label: Important Checklist
       options:
-        - label: I am using the latest version of RyTuneX.
+        - label: I am using the latest version of Hyperion Optimizer.
           required: true
         - label: I am not using Insider, Beta, Dev, or Canary channels of Windows.
           required: true
@@ -31,11 +31,10 @@ body:
     id: install_method
     attributes:
       label: Installation Method
-      description: How did you install RyTuneX?
+      description: How did you install Hyperion Optimizer?
       options:
-        - Microsoft Store
-        - WinGet
-        - GitHub Release
+        - Sideloaded MSIX
+        - Portable ZIP
         - Compiled from source
     validations:
       required: true
@@ -53,7 +52,7 @@ body:
       label: Steps to Reproduce
       description: What exact steps did you take before encountering the issue?
       placeholder: |
-        1. Open RyTuneX.
+        1. Open Hyperion Optimizer.
         2. Go to '...'.
         3. Click on '....'.
         4. See the error ...

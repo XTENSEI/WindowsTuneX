@@ -1,4 +1,4 @@
-using DevWinUI;
+﻿using DevWinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using RyTuneX.Contracts.Services;
@@ -261,8 +261,7 @@ public sealed partial class HomePage : Page
 
     private int GetServicesCount() => ServiceController.GetServices().Length;
 
-    private void GithubButton_Click(object sender, RoutedEventArgs e) => Process.Start(new ProcessStartInfo { FileName = "https://rayenghanmi.github.io/rytunex", UseShellExecute = true });
-    private void DiscordButton_Click(object sender, RoutedEventArgs e) => Process.Start(new ProcessStartInfo { FileName = "https://discord.gg/gyBzyd364t", UseShellExecute = true });
+    private void GithubButton_Click(object sender, RoutedEventArgs e) => Process.Start(new ProcessStartInfo { FileName = "https://github.com/XTENSEI/WindowsTuneX", UseShellExecute = true });
 
     // Navigation handlers — System section
     private void InstalledApps_Click(object sender, RoutedEventArgs e) => App.GetService<INavigationService>().NavigateTo(typeof(DebloatSystemPage).FullName!);
