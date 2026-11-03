@@ -90,17 +90,14 @@
       <PublishReadyToRun>true</PublishReadyToRun>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(PublishAot)' == 'true'">
-      <IlcUseEnvironmentalTools Condition="'$(IlcUseEnvironmentalTools)' == '' and Exists('C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe')">true</IlcUseEnvironmentalTools>
-      <CppLinker Condition="'$(CppLinker)' == '' and Exists('C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe')">C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe</CppLinker>
-      <CppLibCreator Condition="'$(CppLibCreator)' == '' and Exists('C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\lib.exe')">C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\lib.exe</CppLibCreator>
-  </PropertyGroup>
-
-  <ItemGroup Condition="'$(PublishAot)' == 'true' and '$(IlcUseEnvironmentalTools)' == 'true'">
-      <AdditionalNativeLibraryDirectories Include="C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.44.35207\lib\x64" />
-      <AdditionalNativeLibraryDirectories Include="C:\Program Files (x86)\Windows Kits\10\Lib\10.0.26100.0\um\x64" />
-      <AdditionalNativeLibraryDirectories Include="C:\Program Files (x86)\Windows Kits\10\Lib\10.0.26100.0\ucrt\x64" />
-  </ItemGroup>
+  <Target Name="ResolveMsvcToolchain" BeforeTargets="IlcCompile" Condition="'$(PublishAot)' == 'true'">
+    <Exec Command="where link.exe" IgnoreExitCode="true" ConsoleToMSBuild="true" StandardOutputImportance="low">
+      <Output TaskParameter="ExitCode" PropertyName="_LinkOnPath" />
+    </Exec>
+    <PropertyGroup Condition="'$(_LinkOnPath)' == '0'">
+      <IlcUseEnvironmentalTools>true</IlcUseEnvironmentalTools>
+    </PropertyGroup>
+  </Target>
 
 
 
