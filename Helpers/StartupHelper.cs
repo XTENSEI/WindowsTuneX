@@ -1072,7 +1072,7 @@ public static class StartupHelper
         {
             var aliasPath = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "Microsoft", "WindowsApps", "RyTuneX.exe");
+                "Microsoft", "WindowsApps", "Hyperion.exe");
 
             string target = File.Exists(aliasPath)
                 ? aliasPath
