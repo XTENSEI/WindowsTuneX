@@ -1,23 +1,29 @@
-# Contributing to RyTuneX
+# Contributing to Hyperion Optimizer
 
-Thank you for considering contributing to RyTuneX! We appreciate your help in improving the project. Follow these steps to get started:
+Hyperion Optimizer is a modified fork of [RyTuneX](https://github.com/rayenghanmi/RyTuneX)
+by Rayen Ghanmi. Bug reports and feature requests about the original project belong at
+<https://github.com/rayenghanmi/RyTuneX/issues>.
 
 ## How to Contribute
 
-1. **Fork the Repository**: Click the "Fork" button at the top-right corner of this repository to create your own copy.
-2. **Make Your Changes**: Clone your fork locally and create a new branch for your changes.
-3. **Commit Changes**: Commit your changes to the `testing` branch. Ensure your commit messages are clear and descriptive.
-4. **Submit a Pull Request**: Once your changes are ready, submit a pull request to the main repository.
+1. **Fork the repository**: Fork <https://github.com/XTENSEI/WindowsTuneX>.
+2. **Make your changes**: Clone your fork locally and create a branch from `main`.
+3. **Commit changes**: Keep messages clear and descriptive. Sign off your commits with `git commit -s`.
+4. **Submit a pull request**: Open it against `main` in this repository.
+
+The project builds only on Windows. See [.github/workflows/build.yml](.github/workflows/build.yml)
+for the build and packaging steps. GitHub Actions runs the same build on every push.
 
 ## Guidelines
 
-- **Coding Style**: Ensure your code follows the project's coding style. Consistent code style helps maintain readability and quality.
-- **Commit Messages**: Write clear and concise commit messages. A good commit message should describe what changed and why.
-- **Documentation**: Include documentation for any new features or changes. This helps others understand your contributions and use the new features.
-- **Testing**: Test your changes thoroughly before submitting a pull request. This helps catch any issues early and ensures stability.
+- **Coding Style**: Follow the existing style. Consistency helps readability and review.
+- **Commit Messages**: Explain what changed and why.
+- **Documentation**: Document new features or behavior changes.
+- **Testing**: Test your changes on Windows before opening a pull request. The maintainer
+  cannot build or run the app on Linux.
 
 ## Getting Help
 
-If you need help or have questions, feel free to open an issue or start a discussion. We are here to help you.
+Open an issue at <https://github.com/XTENSEI/WindowsTuneX/issues>.
 
-Thank you for your contributions and for helping make RyTuneX better!
+Thank you for helping improve Hyperion Optimizer.

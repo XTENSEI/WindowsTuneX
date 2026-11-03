@@ -1,0 +1,15 @@
+# NOTICE
+
+Hyperion Optimizer is a modified fork of RyTuneX.
+
+Original work: RyTuneX
+Copyright (C) Rayen Ghanmi
+https://github.com/rayenghanmi/RyTuneX
+
+This fork modifies branding, package identity, and application metadata.
+It is not affiliated with, endorsed by, or supported by the original author.
+
+Licensed under the GNU Affero General Public License v3.0. See LICENSE.md.
+Full corresponding source for this fork: https://github.com/XTENSEI/WindowsTuneX
+
+Changes from upstream are visible in the git history and in CHANGELOG.md.
