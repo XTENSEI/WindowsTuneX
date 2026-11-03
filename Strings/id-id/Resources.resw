@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -86,7 +86,7 @@
     <value>Tentang aplikasi ini</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>RyTuneX adalah sebuah program optimalisasi Windows 10 dan 11 yang dibuat oleh Rayen Ghanmi. Aplikasi ini dirancang untuk meningkatkan performa dan efisiensi sistem dengan menghapus perangkat lunak yang dipilih secara selektif dan menonaktifkan layanan yang tidak dibutuhkan.</value>
+    <value>Hyperion Optimizer adalah sebuah program optimalisasi Windows 10 dan 11 yang dibuat oleh Rayen Ghanmi. Aplikasi ini dirancang untuk meningkatkan performa dan efisiensi sistem dengan menghapus perangkat lunak yang dipilih secara selektif dan menonaktifkan layanan yang tidak dibutuhkan.</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Header" xml:space="preserve">
     <value>AGPL v3.0</value>
@@ -587,10 +587,10 @@
     <value>Nonaktifkan fitur Biometrik</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>RyTuneX adalah pengoptimal mutakhir yang dibangun dengan kerangka WinUI 3, dirancang untuk memperkuat kinerja perangkat Windows. Dibuat untuk Windows 10 dan 11, RyTuneX memberdayakan pengguna untuk dengan mudah menghapus aplikasi prapasang yang membandel dan mengoptimalkan sumber daya sistem</value>
+    <value>Hyperion Optimizer adalah pengoptimal mutakhir yang dibangun dengan kerangka WinUI 3, dirancang untuk memperkuat kinerja perangkat Windows. Dibuat untuk Windows 10 dan 11, Hyperion Optimizer memberdayakan pengguna untuk dengan mudah menghapus aplikasi prapasang yang membandel dan mengoptimalkan sumber daya sistem</value>
   </data>
   <data name="UpdateTitle" xml:space="preserve">
-    <value>Pembaruan RyTuneX</value>
+    <value>Pembaruan Hyperion Optimizer</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Tutup</value>
@@ -923,13 +923,13 @@
     <value>Kembalikan semua perubahan</value>
   </data>
   <data name="Settings_RevertChanges.Description" xml:space="preserve">
-    <value>Mengembalikan semua perubahan yang telah dibuat RyTuneX pada sistem Anda, termasuk titik pemulihan</value>
+    <value>Mengembalikan semua perubahan yang telah dibuat Hyperion Optimizer pada sistem Anda, termasuk titik pemulihan</value>
   </data>
   <data name="RevertingChanges" xml:space="preserve">
     <value>Sedang mengembalikan perubahan...</value>
   </data>
   <data name="RevertChangesDialogText" xml:space="preserve">
-    <value>Anda akan membatalkan semua perubahan yang dibuat oleh RyTuneX ke sistem Anda (Kecuali untuk aplikasi yang dicopot pemasangannya) dan mengatur ulang preferensi aplikasi.
+    <value>Anda akan membatalkan semua perubahan yang dibuat oleh Hyperion Optimizer ke sistem Anda (Kecuali untuk aplikasi yang dicopot pemasangannya) dan mengatur ulang preferensi aplikasi.
     
     Apakah Anda yakin ingin melanjutkan?</value>
   </data>
@@ -1464,10 +1464,10 @@
     <value>Warna Aksen</value>
   </data>
   <data name="Settings_AccentColorExpander.Description" xml:space="preserve">
-    <value>Pilih antara gaya RyTuneX, warna sistem, atau warna kustom</value>
+    <value>Pilih antara gaya Hyperion Optimizer, warna sistem, atau warna kustom</value>
   </data>
   <data name="Settings_AccentColor_RyTuneX.Text" xml:space="preserve">
-    <value>Gaya RyTuneX</value>
+    <value>Gaya Hyperion Optimizer</value>
   </data>
   <data name="Settings_AccentColor_System.Text" xml:space="preserve">
     <value>Warna Sistem Saat Ini</value>
@@ -1749,7 +1749,7 @@
     <value>Masalah ditemukan</value>
   </data>
   <data name="RepairPage_StateIssuesFound_Subtitle" xml:space="preserve">
-    <value>RyTuneX dapat memperbaiki masalah ini secara otomatis.</value>
+    <value>Hyperion Optimizer dapat memperbaiki masalah ini secara otomatis.</value>
   </data>
   <data name="RepairPage_StateIssuesFound_Button" xml:space="preserve">
     <value>Perbaiki sistem</value>
@@ -3247,14 +3247,14 @@
 
 Pembaruan Windows sering kali mengembalikan penyesuaian sistem ke nilai default.
 
-Apakah Anda ingin RyTuneX menerapkan ulang semua optimasi, fitur, dan privasi yang disimpan ({2} item)?</value>
+Apakah Anda ingin Hyperion Optimizer menerapkan ulang semua optimasi, fitur, dan privasi yang disimpan ({2} item)?</value>
   </data>
   <data name="SystemUpdate_DialogContentWithBreakdown" xml:space="preserve">
     <value>Windows telah diperbarui dari build {0} ke {1}.
 
 Pembaruan Windows sering kali mengembalikan penyesuaian sistem ke nilai default.
 
-Apakah Anda ingin RyTuneX menerapkan ulang semua pengaturan yang disimpan ({2} total: {3} optimasi, {4} fitur, {5} privasi)?</value>
+Apakah Anda ingin Hyperion Optimizer menerapkan ulang semua pengaturan yang disimpan ({2} total: {3} optimasi, {4} fitur, {5} privasi)?</value>
   </data>
   <data name="SystemUpdate_ReapplyButton" xml:space="preserve">
     <value>Terapkan Ulang Semua Pengaturan</value>
@@ -3278,7 +3278,7 @@ Apakah Anda ingin RyTuneX menerapkan ulang semua pengaturan yang disimpan ({2} t
     <value>Terapkan ulang semua pengaturan</value>
   </data>
   <data name="Settings_ReapplyOptimizations.Description" xml:space="preserve">
-    <value>Terapkan ulang semua optimasi, fitur, dan privasi yang saat ini dikonfigurasi di RyTuneX</value>
+    <value>Terapkan ulang semua optimasi, fitur, dan privasi yang saat ini dikonfigurasi di Hyperion Optimizer</value>
   </data>
   <data name="ReapplyingOptimizations" xml:space="preserve">
     <value>Sedang menerapkan ulang optimasi, fitur, dan pengaturan privasi...</value>
@@ -3290,7 +3290,7 @@ Apakah Anda ingin RyTuneX menerapkan ulang semua pengaturan yang disimpan ({2} t
     <value>Terapkan ulang {0} pengaturan tersimpan ke sistem Anda sekarang?</value>
   </data>
   <data name="NoSavedOptimizations" xml:space="preserve">
-    <value>Tidak ada optimasi, fitur, atau pengaturan privasi yang saat ini disimpan di RyTuneX untuk diterapkan ulang.</value>
+    <value>Tidak ada optimasi, fitur, atau pengaturan privasi yang saat ini disimpan di Hyperion Optimizer untuk diterapkan ulang.</value>
   </data>
   <data name="DeepClean_Title" xml:space="preserve">
     <value>Pembersihan Mendalam</value>

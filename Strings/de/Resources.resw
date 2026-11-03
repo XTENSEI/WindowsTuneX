@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -86,7 +86,7 @@
     <value>Über diese Anwendung</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>RyTuneX, ein von Rayen Ghanmi entwickelter Optimier für Windows 10 und 11, wurde entwickelt, um die Systemleistung und -effizienz zu verbessern, indem ausgewählte Software selektiv entfernt und unnötige Dienste deaktiviert werden.</value>
+    <value>Hyperion Optimizer, ein von Rayen Ghanmi entwickelter Optimier für Windows 10 und 11, wurde entwickelt, um die Systemleistung und -effizienz zu verbessern, indem ausgewählte Software selektiv entfernt und unnötige Dienste deaktiviert werden.</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Header" xml:space="preserve">
     <value>AGPL v3.0</value>
@@ -587,10 +587,10 @@
     <value>Biometriefunktionen deaktivieren</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>RyTuneX ist ein hochmodernes Optimierungstool, das mit dem WinUI 3-Framework entwickelt wurde und darauf abzielt, die Leistung von Windows-Geräten zu steigern. Entwickelt für Windows 10 und 11, ermöglicht RyTuneX den Benutzern, hartnäckige vorinstallierte Apps mühelos zu entfernen und Systemressourcen zu optimieren</value>
+    <value>Hyperion Optimizer ist ein hochmodernes Optimierungstool, das mit dem WinUI 3-Framework entwickelt wurde und darauf abzielt, die Leistung von Windows-Geräten zu steigern. Entwickelt für Windows 10 und 11, ermöglicht Hyperion Optimizer den Benutzern, hartnäckige vorinstallierte Apps mühelos zu entfernen und Systemressourcen zu optimieren</value>
   </data>
   <data name="UpdateTitle" xml:space="preserve">
-    <value>RyTuneX-Updates</value>
+    <value>Hyperion Optimizer-Updates</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Schließen</value>
@@ -923,13 +923,13 @@ Möchten Sie vor dem Fortfahren einen Systemwiederherstellungspunkt erstellen?</
     <value>Alle Änderungen rückgängig machen</value>
   </data>
   <data name="Settings_RevertChanges.Description" xml:space="preserve">
-    <value>Macht alle Änderungen rückgängig, die RyTuneX an Ihrem System vorgenommen hat, einschließlich des Wiederherstellungspunkts</value>
+    <value>Macht alle Änderungen rückgängig, die Hyperion Optimizer an Ihrem System vorgenommen hat, einschließlich des Wiederherstellungspunkts</value>
   </data>
   <data name="RevertingChanges" xml:space="preserve">
     <value>Änderungen werden rückgängig gemacht...</value>
   </data>
   <data name="RevertChangesDialogText" xml:space="preserve">
-    <value>Sie sind dabei, alle Änderungen, die RyTuneX an Ihrem System vorgenommen hat (außer deinstallierte Apps), rückgängig zu machen und die Einstellungen der App zurückzusetzen.
+    <value>Sie sind dabei, alle Änderungen, die Hyperion Optimizer an Ihrem System vorgenommen hat (außer deinstallierte Apps), rückgängig zu machen und die Einstellungen der App zurückzusetzen.
 
 
 Sind Sie sicher, dass Sie fortfahren möchten?</value>
@@ -1466,10 +1466,10 @@ Sind Sie sicher, dass Sie fortfahren möchten?</value>
     <value>Akzentfarbe</value>
   </data>
   <data name="Settings_AccentColorExpander.Description" xml:space="preserve">
-    <value>Wählen Sie zwischen RyTuneX-Stil, Systemfarben oder einer benutzerdefinierten Farbe</value>
+    <value>Wählen Sie zwischen Hyperion Optimizer-Stil, Systemfarben oder einer benutzerdefinierten Farbe</value>
   </data>
   <data name="Settings_AccentColor_RyTuneX.Text" xml:space="preserve">
-    <value>RyTuneX-Stil</value>
+    <value>Hyperion Optimizer-Stil</value>
   </data>
   <data name="Settings_AccentColor_System.Text" xml:space="preserve">
     <value>Aktuelle Systemfarben</value>
@@ -1751,7 +1751,7 @@ Sind Sie sicher, dass Sie fortfahren möchten?</value>
     <value>Probleme gefunden</value>
   </data>
   <data name="RepairPage_StateIssuesFound_Subtitle" xml:space="preserve">
-    <value>RyTuneX kann diese Probleme automatisch beheben.</value>
+    <value>Hyperion Optimizer kann diese Probleme automatisch beheben.</value>
   </data>
   <data name="RepairPage_StateIssuesFound_Button" xml:space="preserve">
     <value>System reparieren</value>
@@ -3249,14 +3249,14 @@ Sind Sie sicher, dass Sie fortfahren möchten?</value>
 
 Windows-Updates setzen Systemoptimierungen häufig auf die Standardwerte zurück.
 
-Möchten Sie, dass RyTuneX alle gespeicherten Optimierungen, Funktionen und Datenschutzeinstellungen ({2} Elemente) erneut anwendet?</value>
+Möchten Sie, dass Hyperion Optimizer alle gespeicherten Optimierungen, Funktionen und Datenschutzeinstellungen ({2} Elemente) erneut anwendet?</value>
   </data>
   <data name="SystemUpdate_DialogContentWithBreakdown" xml:space="preserve">
     <value>Windows wurde von Build {0} auf {1} aktualisiert.
 
 Windows-Updates setzen Systemoptimierungen häufig auf die Standardwerte zurück.
 
-Möchten Sie, dass RyTuneX alle gespeicherten Einstellungen erneut anwendet ({2} insgesamt: {3} Optimierungen, {4} Funktionen, {5} Datenschutzeinstellungen)?</value>
+Möchten Sie, dass Hyperion Optimizer alle gespeicherten Einstellungen erneut anwendet ({2} insgesamt: {3} Optimierungen, {4} Funktionen, {5} Datenschutzeinstellungen)?</value>
   </data>
   <data name="SystemUpdate_ReapplyButton" xml:space="preserve">
     <value>Alle Einstellungen erneut anwenden</value>
@@ -3280,7 +3280,7 @@ Möchten Sie, dass RyTuneX alle gespeicherten Einstellungen erneut anwendet ({2}
     <value>Alle Einstellungen erneut anwenden</value>
   </data>
   <data name="Settings_ReapplyOptimizations.Description" xml:space="preserve">
-    <value>Alle in RyTuneX konfigurierten Optimierungen, Funktionen und Datenschutzeinstellungen erneut anwenden</value>
+    <value>Alle in Hyperion Optimizer konfigurierten Optimierungen, Funktionen und Datenschutzeinstellungen erneut anwenden</value>
   </data>
   <data name="ReapplyingOptimizations" xml:space="preserve">
     <value>Optimierungen, Funktionen und Datenschutzeinstellungen werden erneut angewendet...</value>
@@ -3292,7 +3292,7 @@ Möchten Sie, dass RyTuneX alle gespeicherten Einstellungen erneut anwendet ({2}
     <value>{0} gespeicherte Einstellung(en) jetzt auf Ihr System anwenden?</value>
   </data>
   <data name="NoSavedOptimizations" xml:space="preserve">
-    <value>Derzeit sind keine Optimierungen, Funktionen oder Datenschutzeinstellungen in RyTuneX gespeichert, die erneut angewendet werden können.</value>
+    <value>Derzeit sind keine Optimierungen, Funktionen oder Datenschutzeinstellungen in Hyperion Optimizer gespeichert, die erneut angewendet werden können.</value>
   </data>
   <data name="DeepClean_Title" xml:space="preserve">
     <value>Tiefenreinigung</value>

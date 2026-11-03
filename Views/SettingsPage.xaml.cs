@@ -389,7 +389,7 @@ public sealed partial class SettingsPage : Page
             var count = OptimizationOptions.GetSavedOptimizationsCount();
             if (count == 0)
             {
-                App.ShowNotification("RyTuneX", "NoSavedOptimizations".TryGetLocalized() ?? "No optimizations, features, or privacy settings are currently saved in RyTuneX to re-apply.", InfoBarSeverity.Informational, 4000);
+                App.ShowNotification("Hyperion Optimizer", "NoSavedOptimizations".TryGetLocalized() ?? "No optimizations, features, or privacy settings are currently saved in Hyperion Optimizer to re-apply.", InfoBarSeverity.Informational, 4000);
                 return;
             }
 
@@ -414,7 +414,7 @@ public sealed partial class SettingsPage : Page
                 RequestedTheme = ActualTheme,
                 Style = (Style)Application.Current.Resources["DefaultContentDialogStyle"],
                 BorderBrush = (SolidColorBrush)Application.Current.Resources["AccentAAFillColorDefaultBrush"],
-                Title = "RyTuneX",
+                Title = "Hyperion Optimizer",
                 Content = new TextBlock
                 {
                     Text = dialogText,
@@ -430,7 +430,7 @@ public sealed partial class SettingsPage : Page
             if (result == ContentDialogResult.Primary)
             {
                 App.ShowNotification(
-                    "RyTuneX",
+                    "Hyperion Optimizer",
                     "ReapplyingOptimizations".TryGetLocalized() ?? "Currently re-applying optimizations, features, and privacy settings...",
                     InfoBarSeverity.Informational,
                     3000);
@@ -440,7 +440,7 @@ public sealed partial class SettingsPage : Page
                 string successMsg = string.Format("SystemUpdate_ReappliedSuccess".TryGetLocalized() ?? "Successfully re-applied {0} setting(s).", appliedCount);
 
                 App.ShowNotification(
-                    "RyTuneX",
+                    "Hyperion Optimizer",
                     successMsg,
                     InfoBarSeverity.Success,
                     5000);
@@ -449,7 +449,7 @@ public sealed partial class SettingsPage : Page
         catch (Exception ex)
         {
             _ = LogHelper.LogError($"Failed to re-apply settings: {ex.Message}");
-            App.ShowNotification("RyTuneX", "UnexpectedError".GetLocalized(), InfoBarSeverity.Error, 5000);
+            App.ShowNotification("Hyperion Optimizer", "UnexpectedError".GetLocalized(), InfoBarSeverity.Error, 5000);
         }
     }
 
@@ -487,7 +487,7 @@ public sealed partial class SettingsPage : Page
             RequestedTheme = ActualTheme,
             Style = (Style)Application.Current.Resources["DefaultContentDialogStyle"],
             BorderBrush = (SolidColorBrush)Application.Current.Resources["AccentAAFillColorDefaultBrush"],
-            Title = "RyTuneX",
+            Title = "Hyperion Optimizer",
             Content = contentPanel,
             CloseButtonText = "Close".GetLocalized(),
             PrimaryButtonText = "Continue".GetLocalized(),
@@ -519,7 +519,7 @@ public sealed partial class SettingsPage : Page
                     XamlRoot = XamlRoot,
                     RequestedTheme = ActualTheme,
                     Style = (Style)Application.Current.Resources["DefaultContentDialogStyle"],
-                    Title = "RyTuneX",
+                    Title = "Hyperion Optimizer",
                     Content = new StackPanel
                     {
                         Children = { progressRing, textBlock },

@@ -28,7 +28,7 @@ public sealed partial class MainWindow : WindowEx
         }
 
         Content = null;
-        Title = "RyTuneX";
+        Title = "Hyperion Optimizer";
 
         dispatcherQueue = DispatcherQueue.GetForCurrentThread();
         settings = new UISettings();

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -86,7 +86,7 @@
     <value>이 애플리케이션에 대한 정보</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>Rayen Ghanmi가 만든 Windows 10 및 11 최적화 프로그램인 RyTuneX는 선택한 소프트웨어를 선택적으로 제거하고 불필요한 서비스를 비활성화하여 시스템 성능과 효율성을 향상하도록 설계되었습니다.</value>
+    <value>Rayen Ghanmi가 만든 Windows 10 및 11 최적화 프로그램인 Hyperion Optimizer는 선택한 소프트웨어를 선택적으로 제거하고 불필요한 서비스를 비활성화하여 시스템 성능과 효율성을 향상하도록 설계되었습니다.</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Header" xml:space="preserve">
     <value>AGPL v3.0</value>
@@ -587,10 +587,10 @@
     <value>생체 인식 기능 비활성화</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>RyTuneX는 WinUI 3 프레임워크로 구축된 최첨단 최적화 프로그램으로,Windows 기기의 성능을 향상시킵니다. Windows 10과 11 모두를 위해 제작된 RyTuneX는 사용자가 완고한 사전 설치된 앱을 손쉽게 제거하고 시스템 리소스를 최적화할 수 있도록 지원합니다.</value>
+    <value>Hyperion Optimizer는 WinUI 3 프레임워크로 구축된 최첨단 최적화 프로그램으로,Windows 기기의 성능을 향상시킵니다. Windows 10과 11 모두를 위해 제작된 Hyperion Optimizer는 사용자가 완고한 사전 설치된 앱을 손쉽게 제거하고 시스템 리소스를 최적화할 수 있도록 지원합니다.</value>
   </data>
   <data name="UpdateTitle" xml:space="preserve">
-    <value>RyTuneX 업데이트</value>
+    <value>Hyperion Optimizer 업데이트</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>닫기</value>
@@ -923,13 +923,13 @@
     <value>모든 변경 사항 되돌리기</value>
   </data>
   <data name="Settings_RevertChanges.Description" xml:space="preserve">
-    <value>복원 지점을 포함하여 RyTuneX가 시스템에 적용한 모든 변경 사항을 되돌립니다.</value>
+    <value>복원 지점을 포함하여 Hyperion Optimizer가 시스템에 적용한 모든 변경 사항을 되돌립니다.</value>
   </data>
   <data name="RevertingChanges" xml:space="preserve">
     <value>현재 변경 사항을 되돌리는 중...</value>
   </data>
   <data name="RevertChangesDialogText" xml:space="preserve">
-    <value>RyTuneX가 시스템에 적용한 모든 변경 사항을 되돌리고(제거된 앱 제외) 앱의 기본 설정을 재설정하려고 합니다.
+    <value>Hyperion Optimizer가 시스템에 적용한 모든 변경 사항을 되돌리고(제거된 앱 제외) 앱의 기본 설정을 재설정하려고 합니다.
 
 
 계속하시겠습니까?</value>
@@ -1466,10 +1466,10 @@
     <value>강조 색상</value>
   </data>
   <data name="Settings_AccentColorExpander.Description" xml:space="preserve">
-    <value>RyTuneX 스타일, 현재 시스템 색상 또는 사용자 지정 색상 중에서 선택합니다</value>
+    <value>Hyperion Optimizer 스타일, 현재 시스템 색상 또는 사용자 지정 색상 중에서 선택합니다</value>
   </data>
   <data name="Settings_AccentColor_RyTuneX.Text" xml:space="preserve">
-    <value>RyTuneX 스타일</value>
+    <value>Hyperion Optimizer 스타일</value>
   </data>
   <data name="Settings_AccentColor_System.Text" xml:space="preserve">
     <value>현재 시스템 색상</value>
@@ -1751,7 +1751,7 @@
     <value>문제 발견됨</value>
   </data>
   <data name="RepairPage_StateIssuesFound_Subtitle" xml:space="preserve">
-    <value>RyTuneX가 이 문제들을 자동으로 복구할 수 있습니다.</value>
+    <value>Hyperion Optimizer가 이 문제들을 자동으로 복구할 수 있습니다.</value>
   </data>
   <data name="RepairPage_StateIssuesFound_Button" xml:space="preserve">
     <value>시스템 복구</value>
@@ -3249,14 +3249,14 @@
 
 Windows 업데이트는 시스템 최적화 설정을 기본값으로 초기화하는 경우가 많습니다.
 
-RyTuneX에 저장된 모든 최적화, 기능 및 개인정보 보호 설정({2}개 항목)을 다시 적용하시겠습니까?</value>
+Hyperion Optimizer에 저장된 모든 최적화, 기능 및 개인정보 보호 설정({2}개 항목)을 다시 적용하시겠습니까?</value>
   </data>
   <data name="SystemUpdate_DialogContentWithBreakdown" xml:space="preserve">
     <value>Windows가 빌드 {0}에서 {1}(으)로 업데이트되었습니다.
 
 Windows 업데이트는 시스템 최적화 설정을 기본값으로 초기화하는 경우가 많습니다.
 
-RyTuneX에 저장된 모든 설정을 다시 적용하시겠습니까(총 {2}개: 최적화 {3}개, 기능 {4}개, 개인정보 보호 {5}개)?</value>
+Hyperion Optimizer에 저장된 모든 설정을 다시 적용하시겠습니까(총 {2}개: 최적화 {3}개, 기능 {4}개, 개인정보 보호 {5}개)?</value>
   </data>
   <data name="SystemUpdate_ReapplyButton" xml:space="preserve">
     <value>모든 설정 다시 적용</value>
@@ -3280,7 +3280,7 @@ RyTuneX에 저장된 모든 설정을 다시 적용하시겠습니까(총 {2}개
     <value>모든 설정 다시 적용</value>
   </data>
   <data name="Settings_ReapplyOptimizations.Description" xml:space="preserve">
-    <value>RyTuneX에 현재 구성된 모든 최적화, 기능 및 개인정보 보호 설정을 다시 적용합니다</value>
+    <value>Hyperion Optimizer에 현재 구성된 모든 최적화, 기능 및 개인정보 보호 설정을 다시 적용합니다</value>
   </data>
   <data name="ReapplyingOptimizations" xml:space="preserve">
     <value>최적화, 기능 및 개인정보 보호 설정을 다시 적용하는 중...</value>
@@ -3292,7 +3292,7 @@ RyTuneX에 저장된 모든 설정을 다시 적용하시겠습니까(총 {2}개
     <value>저장된 {0}개의 설정을 지금 시스템에 다시 적용하시겠습니까?</value>
   </data>
   <data name="NoSavedOptimizations" xml:space="preserve">
-    <value>현재 RyTuneX에 다시 적용할 저장된 최적화, 기능 또는 개인정보 보호 설정이 없습니다.</value>
+    <value>현재 Hyperion Optimizer에 다시 적용할 저장된 최적화, 기능 또는 개인정보 보호 설정이 없습니다.</value>
   </data>
   <data name="DeepClean_Title" xml:space="preserve">
     <value>딥 클린</value>

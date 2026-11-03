@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -86,7 +86,7 @@
     <value>關於此應用程式</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>RyTuneX 是由 Rayen Ghanmi 開發的 Windows 10 和 11 優化工具, 旨在通過有選擇地刪除所選軟體並禁用不必要的服務來增強系統性能和效率. </value>
+    <value>Hyperion Optimizer 是由 Rayen Ghanmi 開發的 Windows 10 和 11 優化工具, 旨在通過有選擇地刪除所選軟體並禁用不必要的服務來增強系統性能和效率. </value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Header" xml:space="preserve">
     <value>AGPL v3.0</value>
@@ -587,10 +587,10 @@
     <value>禁用生物識別功能</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>RyTuneX 是一個使用 WinUI 3 框架構建的尖端優化工具, 旨在提升 Windows 裝置的效能. 適用於 Windows 10 和 11, RyTuneX 幫助使用者輕鬆刪除頑固的預裝應用程式並優化系統資源. </value>
+    <value>Hyperion Optimizer 是一個使用 WinUI 3 框架構建的尖端優化工具, 旨在提升 Windows 裝置的效能. 適用於 Windows 10 和 11, Hyperion Optimizer 幫助使用者輕鬆刪除頑固的預裝應用程式並優化系統資源. </value>
   </data>
   <data name="UpdateTitle" xml:space="preserve">
-    <value>RyTuneX 更新</value>
+    <value>Hyperion Optimizer 更新</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>關閉</value>
@@ -921,13 +921,13 @@
     <value>還原所有更改</value>
   </data>
   <data name="Settings_RevertChanges.Description" xml:space="preserve">
-    <value>將 RyTuneX 對系統所做的所有更改還原, 包括還原點</value>
+    <value>將 Hyperion Optimizer 對系統所做的所有更改還原, 包括還原點</value>
   </data>
   <data name="RevertingChanges" xml:space="preserve">
     <value>正在還原更改...</value>
   </data>
   <data name="RevertChangesDialogText" xml:space="preserve">
-    <value>您將還原 RyTuneX 對系統所做的所有更改(已解除安裝的應用程式除外)並重置應用程式的首選項. 
+    <value>您將還原 Hyperion Optimizer 對系統所做的所有更改(已解除安裝的應用程式除外)並重置應用程式的首選項. 
 
 您確定要繼續嗎?</value>
   </data>
@@ -1462,10 +1462,10 @@
     <value>強調色</value>
   </data>
   <data name="Settings_AccentColorExpander.Description" xml:space="preserve">
-    <value>在 RyTuneX 風格、系統顏色或自訂顏色之間進行選擇</value>
+    <value>在 Hyperion Optimizer 風格、系統顏色或自訂顏色之間進行選擇</value>
   </data>
   <data name="Settings_AccentColor_RyTuneX.Text" xml:space="preserve">
-    <value>RyTuneX 風格</value>
+    <value>Hyperion Optimizer 風格</value>
   </data>
   <data name="Settings_AccentColor_System.Text" xml:space="preserve">
     <value>目前系統顏色</value>
@@ -1747,7 +1747,7 @@
     <value>發現問題</value>
   </data>
   <data name="RepairPage_StateIssuesFound_Subtitle" xml:space="preserve">
-    <value>RyTuneX 可以自動修復這些問題。</value>
+    <value>Hyperion Optimizer 可以自動修復這些問題。</value>
   </data>
   <data name="RepairPage_StateIssuesFound_Button" xml:space="preserve">
     <value>修復系統</value>
@@ -3245,14 +3245,14 @@
 
 Windows 更新通常會將系統最佳化調整重設為預設值。
 
-您是否希望 RyTuneX 重新套用所有已儲存的最佳化、功能與隱私權設定（共 {2} 項）？</value>
+您是否希望 Hyperion Optimizer 重新套用所有已儲存的最佳化、功能與隱私權設定（共 {2} 項）？</value>
   </data>
   <data name="SystemUpdate_DialogContentWithBreakdown" xml:space="preserve">
     <value>Windows 已從組建 {0} 更新至 {1}。
 
 Windows 更新通常會將系統最佳化調整重設為預設值。
 
-您是否希望 RyTuneX 重新套用所有已儲存的設定（共 {2} 項：{3} 項最佳化、{4} 項功能、{5} 項隱私權）？</value>
+您是否希望 Hyperion Optimizer 重新套用所有已儲存的設定（共 {2} 項：{3} 項最佳化、{4} 項功能、{5} 項隱私權）？</value>
   </data>
   <data name="SystemUpdate_ReapplyButton" xml:space="preserve">
     <value>重新套用所有設定</value>
@@ -3276,7 +3276,7 @@ Windows 更新通常會將系統最佳化調整重設為預設值。
     <value>重新套用所有設定</value>
   </data>
   <data name="Settings_ReapplyOptimizations.Description" xml:space="preserve">
-    <value>重新套用目前在 RyTuneX 中設定的所有最佳化、功能與隱私權設定</value>
+    <value>重新套用目前在 Hyperion Optimizer 中設定的所有最佳化、功能與隱私權設定</value>
   </data>
   <data name="ReapplyingOptimizations" xml:space="preserve">
     <value>正在重新套用最佳化、功能與隱私權設定...</value>
@@ -3288,7 +3288,7 @@ Windows 更新通常會將系統最佳化調整重設為預設值。
     <value>是否立即將 {0} 項已儲存的設定重新套用到您的系統？</value>
   </data>
   <data name="NoSavedOptimizations" xml:space="preserve">
-    <value>RyTuneX 中目前未儲存任何可重新套用的最佳化、功能或隱私權設定。</value>
+    <value>Hyperion Optimizer 中目前未儲存任何可重新套用的最佳化、功能或隱私權設定。</value>
   </data>
   <data name="DeepClean_Title" xml:space="preserve">
     <value>深度清理</value>

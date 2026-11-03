@@ -363,7 +363,7 @@ public sealed partial class ShellPage : Page
         int totalSaved = OptimizationOptions.GetSavedOptimizationsCount();
 
         string contentText = string.Format(
-            "SystemUpdate_DialogContent".TryGetLocalized() ?? "Windows was updated from build {0} to {1}.\n\nWindows updates frequently reset system tweaks back to default values.\n\nWould you like RyTuneX to re-apply all your saved optimizations, features, and privacy settings ({2} items)?",
+            "SystemUpdate_DialogContent".TryGetLocalized() ?? "Windows was updated from build {0} to {1}.\n\nWindows updates frequently reset system tweaks back to default values.\n\nWould you like Hyperion Optimizer to re-apply all your saved optimizations, features, and privacy settings ({2} items)?",
             updateResult.PreviousBuild.FullBuildString,
             updateResult.CurrentBuild.FullBuildString,
             totalSaved);
@@ -415,7 +415,7 @@ public sealed partial class ShellPage : Page
                     appliedCount);
 
                 ShowNotification(
-                    "RyTuneX",
+                    "Hyperion Optimizer",
                     successMsg,
                     InfoBarSeverity.Success,
                     5000);
