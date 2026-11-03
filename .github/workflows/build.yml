@@ -1,0 +1,92 @@
+name: Build
+
+on:
+  push:
+    branches: [main, hyperion-rebrand]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        platform: [x64]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore RyTuneX.sln -p:Platform=${{ matrix.platform }}
+
+      - name: Create signing certificate
+        shell: pwsh
+        run: |
+          $cert = New-SelfSignedCertificate `
+            -Type Custom `
+            -Subject "CN=41442EC5-E400-4C2F-B9A7-64FEEF036EB2" `
+            -KeyUsage DigitalSignature `
+            -FriendlyName "RyTuneX Signing" `
+            -CertStoreLocation "Cert:\CurrentUser\My" `
+            -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.3", "2.5.29.19={text}")
+          $certPwd = ConvertTo-SecureString -String $env:CERT_PASSWORD -Force -AsPlainText
+          Export-PfxCertificate -Cert $cert -FilePath cert.pfx -Password $certPwd | Out-Null
+          Export-Certificate -Cert $cert -FilePath RyTuneX.cer | Out-Null
+          "CERT_THUMBPRINT=$($cert.Thumbprint)" | Out-File -FilePath $env:GITHUB_ENV -Append
+        env:
+          CERT_PASSWORD: ${{ secrets.CERT_PASSWORD || 'hyperion-ci-temporary' }}
+
+      - name: Build MSIX
+        run: >
+          dotnet build RyTuneX.sln
+          -c Release
+          -p:Platform=${{ matrix.platform }}
+          -p:GenerateAppxPackageOnBuild=true
+          -p:AppxBundle=Never
+          -p:UapAppxPackageBuildMode=SideloadOnly
+          -p:AppxPackageSigningEnabled=true
+          -p:PackageCertificateThumbprint=${{ env.CERT_THUMBPRINT }}
+          -p:PackageCertificateKeyFile=cert.pfx
+          -p:PackageCertificatePassword=${{ secrets.CERT_PASSWORD || 'hyperion-ci-temporary' }}
+
+      - name: Build portable
+        run: >
+          dotnet publish RyTuneX.csproj
+          -c Release
+          -r win-${{ matrix.platform }}
+          -p:Platform=${{ matrix.platform }}
+          -p:PublishAot=false
+          -p:WindowsPackageType=None
+          -p:AppxBundle=Never
+          -o publish/portable
+
+      - name: Collect artifacts
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path out | Out-Null
+          Get-ChildItem -Path AppPackages -Recurse -Filter *.msix |
+            Where-Object { $_.DirectoryName -notmatch '\\Dependencies$' } |
+            ForEach-Object { Copy-Item $_.FullName -Destination out -Force }
+          Get-ChildItem -Path AppPackages -Recurse -Directory -Filter Dependencies |
+            Select-Object -First 1 |
+            ForEach-Object { Copy-Item $_.FullName -Destination out -Recurse -Force }
+          Copy-Item RyTuneX.cer -Destination out -Force
+          Compress-Archive -Path publish\portable\* -DestinationPath out\RyTuneX-portable-${{ matrix.platform }}.zip -Force
+          Get-ChildItem out | Select-Object Name, Length
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HyperionOptimizer-${{ matrix.platform }}
+          path: out\*
+
+      - name: Clean up certificate
+        if: always()
+        shell: pwsh
+        run: Remove-Item cert.pfx, RyTuneX.cer -ErrorAction SilentlyContinue
