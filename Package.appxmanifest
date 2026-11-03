@@ -11,15 +11,15 @@
   IgnorableNamespaces="uap rescap genTemplate">
 
 	<Identity
-	  Name="RayenGhanmi.RyTuneX"
-	  Publisher="CN=41442EC5-E400-4C2F-B9A7-64FEEF036EB2"
-	  Version="1.8.0.0" />
+	  Name="HyperionOptimizer.Hyperion"
+	  Publisher="CN=HyperionOptimizer"
+	  Version="1.0.0.0" />
 
-	<mp:PhoneIdentity PhoneProductId="2743ce40-6634-4232-824a-03fd6a0f09e1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+	<mp:PhoneIdentity PhoneProductId="0061754F-1704-4D2D-86DE-00102A8B7AA3" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
 	<Properties>
-		<DisplayName>RyTuneX</DisplayName>
-		<PublisherDisplayName>Rayen Ghanmi</PublisherDisplayName>
+		<DisplayName>Hyperion Optimizer</DisplayName>
+		<PublisherDisplayName>Hyperion Optimizer Contributors</PublisherDisplayName>
 		<Description>ms-resource:AppDescription</Description>
 		<Logo>Assets\StoreLogo.png</Logo>
 	</Properties>
@@ -37,7 +37,7 @@
 		  Executable="$targetnametoken$.exe"
 		  EntryPoint="$targetentrypoint$">
 			<uap:VisualElements
-			  DisplayName="RyTuneX"
+			  DisplayName="Hyperion Optimizer"
 			  Description="ms-resource:AppDescription"
 			  BackgroundColor="transparent"
 			  Square150x150Logo="Assets\Square150x150Logo.png"
