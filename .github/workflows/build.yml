@@ -83,6 +83,15 @@ jobs:
           Compress-Archive -Path publish\portable\* -DestinationPath out\HyperionOptimizer-portable-${{ matrix.platform }}.zip -Force
           Get-ChildItem out | Select-Object Name, Length
 
+      - name: Build installer
+        if: matrix.platform == 'x64'
+        shell: pwsh
+        run: |
+          choco install innosetup --no-progress -y
+          & "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe" installer\HyperionOptimizer.iss
+          Copy-Item installer\Output\HyperionOptimizer-Setup.exe out\ -Force
+          Get-Item out\HyperionOptimizer-Setup.exe | Select-Object Name, Length
+
       - uses: actions/upload-artifact@v4
         with:
           name: HyperionOptimizer-${{ matrix.platform }}

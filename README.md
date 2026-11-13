@@ -8,18 +8,20 @@ This fork is not affiliated with or endorsed by the original author.
 
 ## Install
 
-Download `HyperionOptimizer.msix`, `HyperionOptimizer.cer`, and
-`HyperionOptimizer-portable-x64.zip` from the latest release.
+Download `HyperionOptimizer-Setup.exe` from the latest release and run it. It requests
+administrator rights, trusts the package certificate, installs the Windows App Runtime
+dependency when needed, registers the app, and opens it.
 
-The MSIX package is self-signed, so trust the certificate before installing:
+Manual install, if you prefer:
 
 ```powershell
 Import-Certificate -FilePath HyperionOptimizer.cer -CertStoreLocation Cert:\LocalMachine\TrustedPeople
 Add-AppxPackage -Path .\HyperionOptimizer.msix
 ```
 
-If the Windows App Runtime 2.5.1 is not installed, add the matching package from the
-`Dependencies` folder first.
+The Windows App Runtime 2.5.1 package from `HyperionOptimizer-dependencies-x64.zip` must be
+installed first. The MSIX is self-signed. Uninstall an earlier build before installing a
+newer one, because each build carries a new certificate.
 
 Prefer no installer? Unzip the portable package and run `Hyperion.exe`. It still requests
 administrator rights, because every optimization writes to machine-wide registry and
