@@ -1,7 +1,9 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
 using RyTuneX.Activation;
 using RyTuneX.Contracts.Services;
+using RyTuneX.Helpers;
 using RyTuneX.Views;
 
 namespace RyTuneX.Services;
@@ -28,9 +30,17 @@ public class ActivationService : IActivationService
         _ = LogHelper.Log("ActivateAsync started");
         await InitializeAsync();
 
-        if (App.MainWindow.Content == null)
+        // Build the shell before the window is shown. This used to run in a deferred
+        // queue callback, so any constructor failure left the window as an empty black
+        // frame with the exception only in the log.
+        try
         {
-            App.MainWindow.Content = new Frame();
+            await EnsureShellAsync();
+        }
+        catch (Exception ex)
+        {
+            _ = LogHelper.LogException(ex, "Shell initialization failed");
+            ShowStartupFailure(ex);
         }
 
         if (App.MainWindow.Content is FrameworkElement rootFe)
@@ -38,10 +48,9 @@ public class ActivationService : IActivationService
             rootFe.RequestedTheme = _themeSelectorService.Theme;
         }
 
-        // Show the window with its Mica backdrop immediately
         App.MainWindow.Activate();
 
-        // Defer the rest of the UI initialization to show the Mica window immediately without a black box
+        // Defer the rest of the UI work so the first frame paints promptly.
         if (!App.MainWindow.DispatcherQueue.TryEnqueue(Microsoft.UI.Dispatching.DispatcherQueuePriority.Low, async () =>
         {
             await RunDeferredActivationAsync(activationArgs);
@@ -55,7 +64,6 @@ public class ActivationService : IActivationService
     {
         try
         {
-            await EnsureShellAsync();
             await HandleActivationAsync(activationArgs);
             await StartupAsync();
             _ = LogHelper.Log("ActivateAsync completed successfully");
@@ -63,6 +71,7 @@ public class ActivationService : IActivationService
         catch (Exception ex)
         {
             _ = LogHelper.LogException(ex, "Deferred activation failed");
+            ShowStartupFailure(ex);
         }
     }
 
@@ -109,5 +118,56 @@ public class ActivationService : IActivationService
     {
         await _themeSelectorService.SetRequestedThemeAsync();
         await Task.CompletedTask;
+    }
+
+    // Shows the failure in the window when the shell could not be created at all.
+    // If the shell is already up, the app stays usable and the error only goes to the log.
+    private static void ShowStartupFailure(Exception ex)
+    {
+        try
+        {
+            if (App.MainWindow.Content is Page)
+            {
+                return;
+            }
+
+            var panel = new StackPanel
+            {
+                Padding = new Thickness(32),
+                Spacing = 12,
+                VerticalAlignment = VerticalAlignment.Center
+            };
+
+            panel.Children.Add(new TextBlock
+            {
+                Text = "Hyperion Optimizer could not load its interface.",
+                FontSize = 20,
+                TextWrapping = TextWrapping.Wrap
+            });
+
+            panel.Children.Add(new TextBlock
+            {
+                Text = ex.ToString(),
+                TextWrapping = TextWrapping.Wrap,
+                IsTextSelectionEnabled = true
+            });
+
+            panel.Children.Add(new TextBlock
+            {
+                Text = "Full details are in %LOCALAPPDATA%\\Packages\\HyperionOptimizer.Hyperion_*\\LocalCache\\Logs",
+                TextWrapping = TextWrapping.Wrap,
+                Opacity = 0.75
+            });
+
+            App.MainWindow.Content = new Grid
+            {
+                Background = new SolidColorBrush(Microsoft.UI.Colors.Black),
+                Children = { panel }
+            };
+        }
+        catch (Exception uiEx)
+        {
+            _ = LogHelper.LogError($"Failed to render startup error: {uiEx.Message}");
+        }
     }
 }

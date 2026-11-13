@@ -13,7 +13,7 @@
 	<Identity
 	  Name="HyperionOptimizer.Hyperion"
 	  Publisher="CN=HyperionOptimizer"
-	  Version="1.0.0.0" />
+	  Version="1.0.1.0" />
 
 	<mp:PhoneIdentity PhoneProductId="0061754F-1704-4D2D-86DE-00102A8B7AA3" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
